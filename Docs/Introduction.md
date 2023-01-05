@@ -38,3 +38,7 @@ To use this component we will write
 ```javascript
 <hello-world></hello-world>
 ```
+
+# Dependency Injection
+
+Dependency lets you declare the dependencies of your TypeScipt Classes without taking care of the installation
