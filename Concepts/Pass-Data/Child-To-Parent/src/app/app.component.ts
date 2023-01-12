@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Child-To-Component';
+  title = '';
+  updateData(item:string){
+    console.warn(item); 
+    this.title = item;
+  }
 }
