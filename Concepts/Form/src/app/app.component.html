@@ -1,0 +1,12 @@
+<form #loginForm='ngForm' (ngSubmit)='userLogin(loginForm.value)'>
+  <input type="text" placeholder="Enter Name" name="name" ngModel>
+  <br><br>
+  <input type="password" placeholder="Enter Password" name="password" ngModel>
+  <br><br>
+  <button>Login</button>
+</form>
+
+<h1>{{title | json}}</h1>
+
+<p>Click this after entering</p>
+<button (click)=userLogin(loginForm.value)>Login Button Outside Form</button>

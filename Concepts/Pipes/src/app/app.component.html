@@ -1,0 +1,25 @@
+<h1>-------------General--------------</h1>
+<h1>Normal: {{title}}</h1>
+<h1>UpperCase: {{title | uppercase}}</h1>
+<h1>LowerCase: {{title | lowercase}}</h1>
+<h1>Extended Date : {{today}}</h1>
+<h1>Date Only : {{today | date}}</h1>
+<h1>Full-Date Only : {{today | date : 'fullDate'}}</h1>
+<h1>-------------Text--------------</h1>
+<h1>Normal Text : {{title}}</h1>
+<h1>Sliced Text : {{title | slice : 2 : 4}}</h1>
+<h1>Sliced Text UpperCase : {{title | slice : 2 : 4 | uppercase}}</h1>
+<h1>Printing json without using json pipe: {{user}}</h1>
+<h1>Printing json with using json pipe: {{user | json}}</h1>
+<h1>-------------Number--------------</h1>
+<h1>Number : {{number}}</h1>
+<h1>Number with 2.2-3 number pipe : {{number | number :'2.2-3'}}</h1>
+<h1>Number with 6.6-8 number pipe : {{number | number :'6.6-8'}}</h1>
+<h1>--------------Currency-------------</h1>
+<h1>Indian Currency: {{20 | currency:'INR'}}</h1>
+<h1>Euro Currency: {{20 | currency:'EUR'}}</h1>
+<h1>--------------Custom Pipes-------------</h1>
+<h3>Create a USD-INR conversion pipe <i>`ng g p pipes/usdInr`</i></h3>
+<p>Here pipes/ is the folder. It is a good practice to put all pipes in just one folder for simplicity and maintain code readability</p>
+<h1>20 Usd in Inr using custom Pipe: {{20 | usdInr : 70}}</h1>
+
