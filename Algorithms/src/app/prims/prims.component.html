@@ -1,0 +1,6 @@
+<form [formGroup]="getMaxForm" (ngSubmit)="getMax(i1.value, i2.value)">
+    <input type="number" placeholder="Integer 1" #i1 name="i1" formControlName='i1'>
+    <input type="number" placeholder="Integer 2" #i2 name="i2" formControlName='i2'>
+    <button>Get Max</button>
+</form>
+<p *ngIf="x">{{x.larger}}</p>
