@@ -1,0 +1,14 @@
+<h1><b>Get Largest</b></h1>
+<div>
+    <label>Input the Comma saperated array of Integers: </label>
+    <input type="text" #inputString>
+</div>
+
+<div>
+    <button (click)="getMaximumInArray(inputString.value)">Get Maximum</button>
+</div>
+
+<div *ngIf="largestElement">
+    <label>Largest Element is:</label>
+    <p>{{ x }}</p>
+  </div>
