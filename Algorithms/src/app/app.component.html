@@ -1,1 +1,11 @@
-<app-merge-sort></app-merge-sort>
+<mat-drawer-container class="example-container" >
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+      <a routerLink=""><button mat-stroked-button color="primary">Home</button><br></a>
+      <a routerLink="rat-in-a-maze"><button mat-stroked-button color="primary">Rat In a Maze</button><br></a>
+      <a routerLink="sort"><button mat-stroked-button color="primary">Sort</button></a>
+    </mat-drawer>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+

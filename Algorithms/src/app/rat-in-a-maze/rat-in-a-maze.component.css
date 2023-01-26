@@ -1,0 +1,28 @@
+.maze-container{
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.maze-grid {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  height: 20px;
+  width: 0.5%;
+}
+
+.maze-cell {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.wall {
+  background-color: black;
+}
+
+.line{
+  background-color: red;
+}
