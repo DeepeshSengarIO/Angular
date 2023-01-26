@@ -2,4 +2,4 @@
 
 Find Path from Starting Box to Ending Box, Avoiding Obstacles
 
-![Path Finding](/images/backtracking.png)
+![Path Finding](/images/i1.png)
