@@ -61,6 +61,4 @@ export class RatInAMazeComponent implements OnInit {
     return false;
   }
 
-
-
 }

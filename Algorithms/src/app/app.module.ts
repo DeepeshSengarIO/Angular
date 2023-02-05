@@ -9,12 +9,12 @@ import { TestComponent } from './test/test.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { GetMaxFromArrayComponent } from './get-max-from-array/get-max-from-array.component';
-import { MergeSortComponent } from './merge-sort/merge-sort.component'
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import { RatInAMazeComponent } from './rat-in-a-maze/rat-in-a-maze.component';
 import { HomeComponent } from './home/home.component';
 import { SortingComponent } from './sorting/sorting.component';
+import { MergeSortComponent } from './sort/merge-sort/merge-sort.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +22,10 @@ import { SortingComponent } from './sorting/sorting.component';
     PrimsComponent,
     TestComponent,
     GetMaxFromArrayComponent,
-    MergeSortComponent,
     RatInAMazeComponent,
     HomeComponent,
-    SortingComponent 
+    SortingComponent,
+    MergeSortComponent 
   ],
   imports: [
     BrowserModule,
