@@ -53,8 +53,15 @@ export class RatInAMazeComponent implements OnInit {
     }
     if(x>=0 && x < this.N && y >= 0 && y < this.N && maze[x][y]==1){
       maze[x][y] = 2;
-      if(this.solveMaze(maze, x, y+1)) return true;
-      if(this.solveMaze(maze, x+1, y)) return true;
+      let path: number = Math.round(Math.random()+0.35);
+        if(path==0){
+          if(this.solveMaze(maze, x, y+1)) return true;
+        if(this.solveMaze(maze, x+1, y)) return true;
+        }else{
+          if(this.solveMaze(maze, x+1, y)) return true;
+        if(this.solveMaze(maze, x, y+1)) return true;
+        }
+        
       maze[x][y] = 1;
       return false;
     }

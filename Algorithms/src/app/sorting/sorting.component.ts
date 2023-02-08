@@ -19,7 +19,7 @@ export class SortingComponent implements OnInit {
 
   ngOnInit(): void {
 
-    for (let i = 0; i < 80; i++) {
+    for (let i = 0; i < 10; i++) {
       this.data[i] = Math.random()*1000;
       this.index[i] = i;
     }
@@ -74,7 +74,7 @@ async basicSort(arr:number[], index:number[]){
     //change index
     let y = max;
     index[i] = index[max];
-    await this.delay(300);
+    await this.delay(500);
     this.initFunc();
   }
 }
